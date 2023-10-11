@@ -1,29 +1,36 @@
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog With Node.js and EJS | <%= title  %></title>
-</head>
+<%- include('./partials/head.ejs') %>
 
 <body>
-    <nav>
-        <div class="site-title">
-            <a href="/"><h1>Blog with NODE.JS and EJS</h1></a>
-            <p>AgnesEm Blog</p>
+    <%- include('./partials/nav.ejs') %>
+        <div class="blogs content">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae dolorum nemo voluptates
+                aperiam iure accusamus enim, at molestiae culpa voluptas. Distinctio, totam et? Ab deserunt recusandae
+                esse fugiat ea, nostrum aperiam ad itaque tempora odio quibusdam id sequi. Ipsum iusto molestiae,
+                aliquid reiciendis maxime unde nulla animi deleniti labore est obcaecati mollitia distinctio quidem sint
+                laudantium eos, suscipit dolores blanditiis? Possimus maiores quod, sed voluptates minima voluptatibus
+                ipsum distinctio ullam ab autem non doloribus deserunt hic nulla voluptatum eveniet officiis quam
+                quaerat beatae nostrum illum optio. Ratione fugiat, repellendus, ullam quia consequatur, libero commodi
+                eveniet enim optio reprehenderit eaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae dolorum nemo voluptates
+                aperiam iure accusamus enim, at molestiae culpa voluptas. Distinctio, totam et? Ab deserunt recusandae
+                esse fugiat ea, nostrum aperiam ad itaque tempora odio quibusdam id sequi. Ipsum iusto molestiae,
+                aliquid reiciendis maxime unde nulla animi deleniti labore est obcaecati mollitia distinctio quidem sint
+                laudantium eos, suscipit dolores blanditiis? Possimus maiores quod, sed voluptates minima voluptatibus
+                ipsum distinctio ullam ab autem non doloribus deserunt hic nulla voluptatum eveniet officiis quam
+                quaerat beatae nostrum illum optio. Ratione fugiat, repellendus, ullam quia consequatur, libero commodi
+                eveniet enim optio reprehenderit eaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae dolorum nemo voluptates
+                aperiam iure accusamus enim, at molestiae culpa voluptas. Distinctio, totam et? Ab deserunt recusandae
+                esse fugiat ea, nostrum aperiam ad itaque tempora odio quibusdam id sequi. Ipsum iusto molestiae,
+                aliquid reiciendis maxime unde nulla animi deleniti labore est obcaecati mollitia distinctio quidem sint
+                laudantium eos, suscipit dolores blanditiis? Possimus maiores quod, sed voluptates minima voluptatibus
+                ipsum distinctio ullam ab autem non doloribus deserunt hic nulla voluptatum eveniet officiis quam
+                quaerat beatae nostrum illum optio. Ratione fugiat, repellendus, ullam quia consequatur, libero commodi
+                eveniet enim optio reprehenderit eaque!</p>
         </div>
-        <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blogs/create">New Blog</a></li>
-        </ul>
-    </nav>
-    <div class="blogs content">
-        <h2>About us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae dolorum nemo voluptates aperiam iure accusamus enim, at molestiae culpa voluptas. Distinctio, totam et? Ab deserunt recusandae esse fugiat ea, nostrum aperiam ad itaque tempora odio quibusdam id sequi. Ipsum iusto molestiae, aliquid reiciendis maxime unde nulla animi deleniti labore est obcaecati mollitia distinctio quidem sint laudantium eos, suscipit dolores blanditiis? Possimus maiores quod, sed voluptates minima voluptatibus ipsum distinctio ullam ab autem non doloribus deserunt hic nulla voluptatum eveniet officiis quam quaerat beatae nostrum illum optio. Ratione fugiat, repellendus, ullam quia consequatur, libero commodi eveniet enim optio reprehenderit eaque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae dolorum nemo voluptates aperiam iure accusamus enim, at molestiae culpa voluptas. Distinctio, totam et? Ab deserunt recusandae esse fugiat ea, nostrum aperiam ad itaque tempora odio quibusdam id sequi. Ipsum iusto molestiae, aliquid reiciendis maxime unde nulla animi deleniti labore est obcaecati mollitia distinctio quidem sint laudantium eos, suscipit dolores blanditiis? Possimus maiores quod, sed voluptates minima voluptatibus ipsum distinctio ullam ab autem non doloribus deserunt hic nulla voluptatum eveniet officiis quam quaerat beatae nostrum illum optio. Ratione fugiat, repellendus, ullam quia consequatur, libero commodi eveniet enim optio reprehenderit eaque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae dolorum nemo voluptates aperiam iure accusamus enim, at molestiae culpa voluptas. Distinctio, totam et? Ab deserunt recusandae esse fugiat ea, nostrum aperiam ad itaque tempora odio quibusdam id sequi. Ipsum iusto molestiae, aliquid reiciendis maxime unde nulla animi deleniti labore est obcaecati mollitia distinctio quidem sint laudantium eos, suscipit dolores blanditiis? Possimus maiores quod, sed voluptates minima voluptatibus ipsum distinctio ullam ab autem non doloribus deserunt hic nulla voluptatum eveniet officiis quam quaerat beatae nostrum illum optio. Ratione fugiat, repellendus, ullam quia consequatur, libero commodi eveniet enim optio reprehenderit eaque!</p>
-    </div>
+<%- include('./partials/footer.ejs') %>
 </body>
-
 </html>
