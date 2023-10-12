@@ -4,12 +4,18 @@ const morgan = require('morgan')
 // express app
 const app = express()
 
+// connect to mongo db
+const mongoURI = 'mongodb+srv://agnestest:1234test@cluster0.kn9jvkp.mongodb.net/?retryWrites=true&w=majority'
+
 // register view engine
 app.set('view engine', 'ejs')
 //app.set('views', 'folder_name') // only when folder name with views is different then "views"
 
 // listen for request
 app.listen(3000)
+
+// middleware and static files
+app.use(express.static('public'))
 
 /* app.use(morgan('dev')) */
 app.use(morgan('tiny'))
