@@ -18,7 +18,7 @@ app.set('view engine', 'ejs')
 
 // middleware and static files
 app.use(express.static('public'))
-
+app.use(express.urlencoded({ extended: true }))
 /* app.use(morgan('dev')) */
 app.use(morgan('tiny'))
 
@@ -34,13 +34,24 @@ app.get('/about', (req, res) => {
 
 // blog routes
 app.get('/blogs', (req, res) => {
-    Blog.find().sort({createdAt: -1})
+    Blog.find().sort({ createdAt: -1 })
         .then((result) => {
-            res.render('index', {title:'All blogs', blogs: result})
+            res.render('index', { title: 'All blogs', blogs: result })
         })
         .catch((err) => {
             console.log(err)
         })
+})
+
+app.post('/blogs', (req, res) => {
+    const blog = new Blog(req.body)
+    blog.save()
+    .then((result) => {
+        res.redirect('/blogs')
+    })
+    .catch((err) => {
+        console.log(err)
+    })
 })
 app.get('/blogs/create', (req, res) => {
     res.render('create', { title: "Create a new blog" })
