@@ -2,7 +2,6 @@ const express = require('express')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const userdata = require('./userData')
-
 const blogRoutes = require('./routes/blogRoutes')
 
 // express app
